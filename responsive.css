@@ -1,0 +1,48 @@
+@media screen and (max-width: 1000px){
+    p{
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-2{
+        gap: 0.9rem;
+    }
+
+    .achievment-right ul li{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 825px) {
+    /*burger*/
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: rgb(248, 248, 248);
+        border-left: 1px solid var black;
+        z-index: 9;
+        transform: translateX(100%);
+        transition: 0.2s ease-in-out;
+    }
+
+    nav ul{
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav-active{
+        transform: translateX(0);
+    }
+}
